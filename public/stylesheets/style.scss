@@ -20,3 +20,37 @@ nav{
   z-index: 1000;
 
 }
+
+.mod-header{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.post-mod-card {
+  width: 40vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.delete-btn, .post-text, .post-id{
+  margin: 10px 20px;
+}
+
+.lists{
+display: flex;
+justify-content: center;
+}
+
+.post-text{
+  
+}
+
+.post-id{
+ 
+}

@@ -1,0 +1,35 @@
+<header class="mod-header">
+  <h2>Moderator Page</h2>
+  <div>
+    <h3>Welcome back {{user.username}}</h3>
+    <a href="private/logout">Log Out</a>
+  </div>
+</header>
+<div class="lists">
+  <div class="left-col">
+    {{#each post}}
+    <div class="post-mod-card">
+      <p class="post-text">
+        {{text}}
+      </p>
+      <p class="post-id">{{id}}</p>
+      <form action='private/{{this.id}}/delete' method='POST'>
+        <button class="delete-btn">Delete</button>
+      </form>
+    </div>
+    {{/each }}
+  </div>
+  <div class="right-col">
+    {{#each post}}
+    <div class="post-mod-card">
+      <p class="post-text">
+        {{text}}
+      </p>
+      <p class="post-id">{{id}}</p>
+      <form action='private/{{this.id}}/delete' method='POST'>
+        <button class="delete-btn">Delete</button>
+      </form>
+    </div>
+    {{/each }}
+  </div>
+</div>
