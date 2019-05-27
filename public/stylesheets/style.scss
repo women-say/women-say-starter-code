@@ -1,0 +1,22 @@
+
+
+body {
+  margin:0;
+  padding:0;
+}
+#map {
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+  display:block;
+  z-index: 200;
+}
+nav{
+  position:fixed;
+  display:block;
+  z-index: 1000;
+
+}
