@@ -1,15 +1,16 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
-  address: String,
-  text: String
-}, {
-    timestamps: {
-      createdAt: 'created_at',
-      updatedAt: 'updated_at'
-    }
-  });
+  location: {
+    type: { type: String },
+    coordinates: [Number]
+  },
+  text:String,
+},{timestamps:true})
 
-const Post = mongoose.model('Post', postSchema);
+//aquí cosas de localización??
+
+const Post = mongoose.model("Post", postSchema);
+
 module.exports = Post;
