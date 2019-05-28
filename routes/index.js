@@ -8,8 +8,18 @@ router.get('/', (req, res, next) => {
 });
 
 router.post('/', (req,res,next)=>{
-  const {address, text} = req.body
-  const newPost = new Post ({address, text})
+  // // GEOCODER RESULT OBJECT
+  // geocoder.on('results', function(results) {
+  //   // console.log(results);
+  //   coodinates =[]
+  //   let long = results.features[0].geometry.coordinates[1])
+  //   let lat = results.features[0].geometry.coordinates[0]
+  //   coodinates = [long, lat]
+    
+  // })
+  const {location, text} = req.body
+  console.log(location)
+  const newPost = new Post ({location, text})
   newPost.save()
   .then(
     res.redirect('/')

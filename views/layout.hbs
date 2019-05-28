@@ -15,22 +15,23 @@
 <body>
 
 
-  {{!-- <nav>
+  <nav>
 
     <div class="align right">
-    <a href="/auth/login" class="about-btn"></a><img  class="about-img" src="/images/about.png"></a>
-    <a href="/auth/login" class="stats-btn"><img class="stats-img" src="/images/stats.png"></a>
-  </div>
-  <div class="align left"></div>
-  <a href="/auth/login" class="post-btn"><img class="post-img end" src="/images/post.png"></a>
-  </div>
+      <a href="/auth/login" class="about-btn"></a><img class="about-img" src="/images/about.png"></a>
+      {{!-- <a href="/auth/login" class="stats-btn"><img class="stats-img" src="/images/stats.png"></a> --}}
+    </div>
+    <div class="align left"></div>
+    <a href="/auth/login" class="post-btn"><img class="post-img end" src="/images/post.png"></a>
+    </div>
 
 
-  </nav> --}}
+  </nav>
 
   {{{body}}}
-  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 
+  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script
     src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.3.0/mapbox-gl-geocoder.min.js'></script>
   <link rel='stylesheet'
