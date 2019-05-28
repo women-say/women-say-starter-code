@@ -2,10 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const postSchema = new Schema({
-  location: {
-    type: { type: String },
-    coordinates: [Number]
-  },
+  location: String,
   text:String,
 },{timestamps:true})
 
