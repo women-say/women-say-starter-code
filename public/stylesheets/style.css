@@ -1,7 +1,35 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *::before, *::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Tiempos Headline Light'; }
+
+.icon-container {
+  z-index: 500;
+  display: flex; }
+
+.icons-container ul {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30%; }
+
+.icons-container li {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 10px; }
+
+.svg-icon {
+  width: 50px;
+  margin: 0 20px; }
 
 #map {
   margin: 0;
@@ -62,16 +90,13 @@ section span {
   width: 50px;
   display: block; }
 
-#close-btn {
-  width: 200px; }
+#close-btn-about, #close-btn-post {
+  display: flex; }
 
 #post {
-  display: block;
-  margin-left: 50vw; }
-
-#geocoder-container > div {
-  min-width: 50%;
-  margin-left: 25%; }
+  display: none;
+  margin-left: 50vw;
+  height: 95vh; }
 
 .mod-header {
   margin: 0 auto;
@@ -94,5 +119,9 @@ section span {
 .lists {
   display: flex;
   justify-content: center; }
+
+#geocoder-container > div {
+  min-width: 50%;
+  margin-left: 25%; }
 
 /*# sourceMappingURL=style.css.map */

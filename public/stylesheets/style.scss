@@ -1,9 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+	
+html{
+  box-sizing: border-box;
+}
 
 body {
   margin:0;
   padding:0;
   font-family: 'Tiempos Headline Light'
+}
+.icon-container{
+  z-index: 500;
+  display: flex;
+
+}
+
+.icons-container ul{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 30%;
+}
+
+ .icons-container li{
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.post-icon{
+}
+
+.svg-icon{
+  width: 50px;
+  margin: 0 20px;
 }
 //MAP
 #map {
@@ -44,6 +80,7 @@ nav{
 #about{
   display:none;
 }
+
 section{
   position:absolute;
   width: 50vw;
@@ -70,13 +107,17 @@ section span{
   width: 50px;
   display:block;
 }
-#close-btn{
-  width: 200px;
+#close-btn-about, #close-btn-post{
+  display: flex;
 }
+
+
 //POST SECTION
 #post{
-  display: block;
+  display: none;
   margin-left: 50vw;
+  // BUG, NO LLEGA A 100VH (o mejor dicho, llega pero se pone un poquito para abajo)
+  height: 95vh;
 }
 
 .mod-header{
