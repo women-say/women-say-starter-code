@@ -1,35 +1,27 @@
-<header class="mod-header">
+<div class="container row">
+<header class="mod-header col-left">
+  <h1>Women say.</h1>
   <h2>Moderator Page</h2>
-  <div>
-    <h3>Welcome back {{user.username}}</h3>
-    <a href="private/logout">Log Out</a>
-  </div>
+ 
+    <h3>Hi {{user.username}}</h3>
+    
+    <a href="private/logout" class="log-out-btn">Log Out</a>
+  
 </header>
-<div class="lists">
-  <div class="left-col">
+<div class="lists col">
+  <div >
     {{#each post}}
-    <div class="post-mod-card">
+    <div class="post-mod-card row">
       <p class="post-text">
         {{text}}
       </p>
       <p class="post-id">{{id}}</p>
       <form action='private/{{this.id}}/delete' method='POST'>
-        <button class="delete-btn">Delete</button>
+        <button class="delete-btn"><img src="/images/delete-button.png" /></button>
       </form>
     </div>
     {{/each }}
   </div>
-  <div class="right-col">
-    {{#each post}}
-    <div class="post-mod-card">
-      <p class="post-text">
-        {{text}}
-      </p>
-      <p class="post-id">{{id}}</p>
-      <form action='private/{{this.id}}/delete' method='POST'>
-        <button class="delete-btn">Delete</button>
-      </form>
-    </div>
-    {{/each }}
-  </div>
+  
+</div>
 </div>

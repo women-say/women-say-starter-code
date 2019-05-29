@@ -48,13 +48,20 @@
 <div class="map-box">
   <figure id="map"></figure>
 </div>
+{{!-- Chart --}}
+    {{!-- YEAR --}}
+    {{!-- <select name="coin" id="coin">
+      <option value="">Euros</option>
+      <option value="USD">Dolares</option>
+    </select> --}}
+ <canvas style="width:90%" id="canvas"></canvas>
 
 {{!-- post section --}}
 <section id="post">
   <div id="close-btn-post"><img class="close-btn" src="/images/close-btn.png"></div>
   <h1>Post</h1>
   <form method="POST" action="/">
-  <div name="text" id="geocoder" class="geocoder"></div>
+  <div id="geocoder" class="geocoder"></div>
   <input type="text" name="text" placeholder="text">
   <input type="submit" name="" placeholder="Post" id="submit">
   </form>

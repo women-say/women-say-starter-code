@@ -117,7 +117,7 @@ section span{
   display: none;
   margin-left: 50vw;
   // BUG, NO LLEGA A 100VH (o mejor dicho, llega pero se pone un poquito para abajo)
-  height: 95vh;
+
 }
 
 .mod-header{
@@ -146,22 +146,132 @@ display: flex;
 justify-content: center;
 }
 
-.post-text{
+// .post-text{
   
-}
+// }
 
-.post-id{
+// .post-id{
  
-}
+// }
 #geocoder-container > div {
   min-width:50%;
   margin-left:25%;
   }
 //MARKER
+
 .marker {
-  background-image: url('/images/stats.png');
+  background-image: url('/images/point.svg');
   width: 40px;
   height: 40px;
-  cursor:pointer;
+  
   background-size:cover;
+}
+.mapboxgl-popup {
+  max-width: 200px;
+  }
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(224,90,90);
+  color:white;
+  font-family: 'Tiempos Headline Light';
+  font-size: 20px;
+}
+#chart{
+  width:500px;
+  height: 500px;
+  z-index: 1;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.col-left{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.mod-header{
+  background-color: rgb(65, 59, 59);
+  color: white;
+  display: flex;
+  height: 100vh;
+  position:block;
+  font-family: 'HK Grotesk Medium'
+}
+
+.lists{
+  background-color: rgb(224,90,90);
+  height: 100vh;
+}
+h1{
+  font-family: 'Tiempos Headline Black';
+  color: rgb(224,90,90)
+}
+h3 {
+  font-family: 'HK Grotesk Medium'
+}
+.delete-btn img{
+  width: 15px;
+}
+.delete-btn{
+  border: none;
+  background-color: rgb(224,90,90);
+}
+.log-out-btn{
+  color:white;
+  font-size: 20px;
+  display:absolute;
+  padding-top: 400px;
+}
+.log-out-btn:hover{
+  color:white;
+ 
+}
+.login{
+  background-color: rgb(65, 59, 59);
+  color:white;
+  font-family: 'HK Grotesk Medium';
+  width: 100vw;
+  height: 100vh;
+  font-size: 25px;
+  display:blocK;
+  margin:0, auto;
+  padding-top: 25vh;
+}
+.login h2{
+  color:rgb(224,90,90);
+  padding-bottom: 30px;
+}
+.login input{
+  -webkit-appearance: none;
+  width: 250px;
+  border: 0;
+  padding: 12px 0;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid #C8CCD4;
+  background: none;
+  border-radius: 0
+}
+.login-btn img{
+
+  width: 100px;
+}
+.login-btn {
+  border: none;
+  background-color: rgb(65, 59, 59);
+  font-family: 'HK Grotesk Medium';
+  color: white;
+  font-size: 30px;
 }
