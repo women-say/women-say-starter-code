@@ -25,6 +25,10 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.get('/chart', (req, res, next) => {
+  res.render('chart');
+});
+
 //POST MODEL FROM FORM INPUTS AND REDIRECT INDEX
 
 router.post('/', (req,res,next)=>{
