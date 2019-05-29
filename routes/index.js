@@ -1,22 +1,33 @@
 const express = require('express');
 const router = express.Router();
 const Post = require("../models/Post");
+const csvFilePath=('./bin/gender_development_indexG.csv')
+const csv=require('csvtojson')
+
+
+router.get("/erjason", (req,res) => {
+  csv()
+  .fromFile(csvFilePath)
+  .then((jsonObj)=>{
+      res.json(jsonObj);
+    })
+})
+    /**
+     * [
+     * 	{a:"1", b:"2", c:"3"},
+     * 	{a:"4", b:"5". c:"6"}
+     * ]
+     */ 
+
 
 /* GET home page */
 router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+//POST MODEL FROM FORM INPUTS AND REDIRECT INDEX
+
 router.post('/', (req,res,next)=>{
-  // // GEOCODER RESULT OBJECT
-  // geocoder.on('results', function(results) {
-  //   // console.log(results);
-  //   coodinates =[]
-  //   let long = results.features[0].geometry.coordinates[1])
-  //   let lat = results.features[0].geometry.coordinates[0]
-  //   coodinates = [long, lat]
-    
-  // })
   const {location, text} = req.body
   console.log(location)
   const newPost = new Post ({location, text})
