@@ -260,9 +260,8 @@ section span{
   width: 50px;
   display:block;
 }
-#close-btn-about, #close-btn-post{
-  display: flex;
-}
+
+
 
 
 //POST SECTION
@@ -531,6 +530,42 @@ h3 {
 
 ////// CHARTS CSS
 // CHART 1
+.close-chart-cont-btn{
+  position: fixed;
+  top: -1.5vh;
+  right: .8vw;
+
+ .leftright{
+  height: 4px;
+  width: 35px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: black;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all .3s ease-in;
+}
+
+.rightleft{
+  height: 4px;
+  width: 35px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: black;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all .3s ease-in;
+}
+}
+
+.close-chart-cont-btn:hover .leftright{
+  transform: rotate(-45deg);
+  background-color: black;
+}
+.close-chart-cont-btn:hover .rightleft{
+  transform: rotate(45deg);
+  background-color: black;
+}
 
 #chart-icon {
   margin: 10px 0 0 20px;
@@ -553,7 +588,7 @@ h3 {
 .closeChartButton{
   position: fixed;
   top: 1.5vh;
-  right: 1.5vw;
+  right: 1vw;
   width: 35px;
   height: 35px;
   border-radius: 100px;
@@ -580,16 +615,16 @@ h3 {
 }
 
 #myChart{
-  background-color:rgb(199, 115, 115);
+  background-color:rgba(65, 59, 59, .4);
   opacity: 5%;
-  height:100vh;
+  height: 94vh;
 }
 
 #myChartLegend{
-  height:100vh;
+  height:94vh !important;
   overflow-y: scroll;
   
-  background-color:rgb(199, 115, 115);
+  background-color:rgba(65, 59, 59, .4);
   font-family: 'HK Grotesk Medium';
   color: rgb(231, 229, 229);
 }
@@ -599,8 +634,13 @@ h3 {
   cursor: cell;
 
 }
+
+#myChartLegend ul {
+  padding: 1.8em 0;
+
+}
 #myChartLegend ul li.hidden {
-  color:rgb(65, 59, 59);
+  color:rgb(31, 29, 29);
 }
 
 

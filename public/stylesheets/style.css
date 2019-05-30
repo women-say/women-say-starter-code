@@ -219,9 +219,6 @@ section span {
   width: 50px;
   display: block; }
 
-#close-btn-about, #close-btn-post {
-  display: flex; }
-
 #post {
   transition-property: all;
   transition: all 0.6s cubic-bezier(0.33, 0.72, 0.81, 1.19); }
@@ -449,6 +446,37 @@ h3 {
   color: white;
   font-size: 30px; }
 
+.close-chart-cont-btn {
+  position: fixed;
+  top: -1.5vh;
+  right: .8vw; }
+  .close-chart-cont-btn .leftright {
+    height: 4px;
+    width: 35px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    transition: all .3s ease-in; }
+  .close-chart-cont-btn .rightleft {
+    height: 4px;
+    width: 35px;
+    position: absolute;
+    margin-top: 24px;
+    background-color: black;
+    border-radius: 2px;
+    transform: rotate(-45deg);
+    transition: all .3s ease-in; }
+
+.close-chart-cont-btn:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: black; }
+
+.close-chart-cont-btn:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: black; }
+
 #chart-icon {
   margin: 10px 0 0 20px; }
 
@@ -468,7 +496,7 @@ h3 {
 .closeChartButton {
   position: fixed;
   top: 1.5vh;
-  right: 1.5vw;
+  right: 1vw;
   width: 35px;
   height: 35px;
   border-radius: 100px;
@@ -495,14 +523,14 @@ h3 {
   height: 700px; }
 
 #myChart {
-  background-color: #c77373;
+  background-color: rgba(65, 59, 59, 0.4);
   opacity: 5%;
-  height: 100vh; }
+  height: 94vh; }
 
 #myChartLegend {
-  height: 100vh;
+  height: 94vh !important;
   overflow-y: scroll;
-  background-color: #c77373;
+  background-color: rgba(65, 59, 59, 0.4);
   font-family: 'HK Grotesk Medium';
   color: #e7e5e5; }
 
@@ -511,7 +539,10 @@ h3 {
   padding-left: 40px;
   cursor: cell; }
 
+#myChartLegend ul {
+  padding: 1.8em 0; }
+
 #myChartLegend ul li.hidden {
-  color: #413b3b; }
+  color: #1f1d1d; }
 
 /*# sourceMappingURL=style.css.map */

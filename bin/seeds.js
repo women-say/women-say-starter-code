@@ -1,47 +1,26 @@
-// Seeds file that remove all users and create 2 new users
+const mongoose = require('mongoose');
+const Post = require("../models/Post")
+const dbName = 'women-say-starter-code'
+mongoose.connect(`mongodb://localhost/${dbName}`);
 
-// To execute this seed, run from the root of the project
-// $ node bin/seeds.js
-
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
-const User = require("../models/User");
-
-const bcryptSalt = 10;
-
-mongoose
-  .connect('mongodb://localhost/women-say-starter-code', {useNewUrlParser: true})
-  .then(x => {
-    console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
-  })
-  .catch(err => {
-    console.error('Error connecting to mongo', err)
-  });
-
-let users = [
+const posts = [
   {
-    username: "alice",
-    password: bcrypt.hashSync("alice", bcrypt.genSaltSync(bcryptSalt)),
+    location: "Madrid, Spain",
+    text: "My collegue stalks me everytime I get out of work.",
   },
   {
-    username: "bob",
-    password: bcrypt.hashSync("bob", bcrypt.genSaltSync(bcryptSalt)),
-  }
+    location: "Orlando, United States",
+    text: "My main manager touches my butt in every occasion he can",
+  },
+  {
+    location: "Turin, Italy",
+    text: "I work in a group with another male collegue. We got hired the same day for the same job. Different paychecks.",
+  },
 ]
 
-User.deleteMany()
-.then(() => {
-  return User.create(users)
-})
-.then(usersCreated => {
-  console.log(`${usersCreated.length} users created with the following id:`);
-  console.log(usersCreated.map(u => u._id));
-})
-.then(() => {
-  // Close properly the connection to Mongoose
-  mongoose.disconnect()
-})
-.catch(err => {
-  mongoose.disconnect()
-  throw err
-})
+Post.create(posts)
+  .then(celCreated => {
+    console.log(`Created ${celCreated.length} posts`)
+    mongoose.connection.close()
+  })
+  .catch(err => console.log(`Omg an error: ${err}`))
