@@ -533,4 +533,7 @@ section span {
 #myChartLegend ul li.hidden {
   color: #1f1d1d; }
 
+.about-title, .post-title {
+  font-family: 'HK Grotesk Bold'; }
+
 /*# sourceMappingURL=style.css.map */

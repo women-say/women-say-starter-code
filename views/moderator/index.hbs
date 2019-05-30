@@ -13,17 +13,17 @@
     {{#each post}}
     <div class="post-mod-card row">
       <div class="comment-text">
-        <p>
-          {{text}}
-        </p>
+      <p>
+        {{text}}
+      </p>
       </div>
       <div class="comment-id">
-        <p class="post-id">{{id}}</p>
+      <p class="post-id">{{id}}</p>
       </div>
       <div class="comment-delete">
-        <form action='private/{{this.id}}/delete' method='POST'>
-          <button class="delete-btn"><img src="/images/delete-button.png" /></button>
-        </form>
+      <form action='private/{{this.id}}/delete' method='POST'>
+        <button class="delete-btn"><img src="/images/delete-button.png" /></button>
+      </form>
       </div>
     </div>
     {{/each }}
