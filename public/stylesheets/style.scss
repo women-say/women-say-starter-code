@@ -41,7 +41,7 @@ body {
   overflow: auto; /* Enable scroll if needed */
   text-align: center;
   animation: disappear;
-  animation-duration: 5s;
+  animation-duration: 4s;
 }
 
 .intro-bg h1{
@@ -79,6 +79,13 @@ body {
 }
 
 
+///////// CHART INDEX
+
+#myChartindex {
+  z-index: 1400;
+  width: 80vw;
+  height: 90vh;
+}
 
 
 ////////// BUTTON CLOSE POST 
@@ -121,11 +128,11 @@ body {
 
 .close-container:hover .leftright{
   transform: rotate(-45deg);
-  background-color: $violeta;
+  background-color: #fff;
 }
 .close-container:hover .rightleft{
   transform: rotate(45deg);
-  background-color: $violeta;
+  background-color: #fff;
 }
 .close-container:hover label{
   opacity: 1;
@@ -176,8 +183,19 @@ body {
   width: 50px;
   padding: 10px;
   margin: 10px 0 0 20px;
-
+  cursor: pointer;
 }
+
+.about-img:hover, .about-img:focus{
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(#fff,0);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
+
+
 .stats-img{
   width: 50px;
   padding: 10px;
@@ -303,10 +321,6 @@ transform: translateX(50vw)
   justify-content: start;
 }
 
-// .slider.closed {
-// 	max-height: 0;
-// }
-
 .mod-header{
   margin: 0 auto;
   display: flex;
@@ -338,6 +352,8 @@ justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
 }
 .post-text{
   height: 150px;
@@ -511,4 +527,50 @@ h3 {
   font-family: 'HK Grotesk Medium';
   color: white;
   font-size: 30px;
+}
+
+////// CHARTS CSS
+// CHART 1
+
+#chart-icon {
+  margin: 10px 0 0 20px;
+}
+
+.chart-container{
+ margin: 3vh 3vw 3vh 3vw;
+ background-color: rgba(0, 0, 0, .4);
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 2000;
+ width: 94vw;
+ height: 94vh;
+ animation: appearChart;
+ animation-duration: .7s;
+ border-radius: 4px;
+}
+
+.closeChartButton{
+  position: fixed;
+  top: 1.5vh;
+  right: 1.5vw;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background-color: red;
+}
+
+@keyframes appearChart {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fast-disappear{
+  animation: fastDisappear;
+  animation-duration: .5s;
+}
+
+@keyframes fastDisappear {
+  0%   { opacity: 100; }
+  100% { opacity: 0; }
 }
