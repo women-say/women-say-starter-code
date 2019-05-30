@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Post = require("../models/Post")
 const dbName = 'women-say-starter-code'
-mongoose.connect(`mongodb://localhost/${dbName}`);
+mongoose.connect(process.env.DB);
 
 const posts = [
   {

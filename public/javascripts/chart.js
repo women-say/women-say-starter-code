@@ -18,7 +18,7 @@ function legendClickCallback(event) {
   }
 }
 const paintChart = () => {
-  axios.get("http://localhost:3000/erjason")
+  axios.get("https://women-say.herokuapp.com/erjason")
     .then(response => {
 
       console.log("Response.data", response.data)
