@@ -24,6 +24,13 @@ body {
   font-family: 'Tiempos Headline Light';
   overflow-x: hidden;
 }
+h1{
+  font-family: 'Tiempos Headline Black';
+  color: rgb(224,90,90)
+}
+h3 {
+  font-family: 'HK Grotesk Medium'
+}
 /////// INTRO BACKGROUND WOMEN SAY
 
 .intro-bg{
@@ -87,7 +94,6 @@ body {
   height: 90vh;
 }
 
-
 ////////// BUTTON CLOSE POST 
 .close-container{
   position: relative;
@@ -119,8 +125,6 @@ body {
   transform: rotate(-45deg);
   transition: all .3s ease-in;
 }
-
-
 .close{
   margin: 60px 0 0 5px;
   position: absolute;
@@ -161,10 +165,10 @@ body {
 }
 
 
-.svg-icon{
-  width: 50px;
-  margin: 0 20px;
-}
+// .svg-icon{
+//   width: 50px;
+//   margin: 0 20px;
+// }
 
 //MAP
 #map {
@@ -180,11 +184,12 @@ body {
 
 // NAV BAR
 .about-img{
-  width: 50px;
+  width: 75px;
   padding: 10px;
   margin: 10px 0 0 20px;
   cursor: pointer;
 }
+
 
 .about-img:hover, .about-img:focus{
   animation: pulse 1s;
@@ -197,12 +202,13 @@ body {
 
 
 .stats-img{
-  width: 50px;
-  padding: 10px;
+  width: 75px;
+  padding: 8px;
+  cursor:pointer
 }
 
 .post-img{
-  width: 100px;
+  width: 150px;
   padding-right:60px;
   margin-top: 20px;
 }
@@ -244,7 +250,7 @@ section{
   font-size: 3em;
 }
 section h1{
-  color:white;
+  color:rgb(231, 229, 229);
 }
 section p{
   padding: 20px;
@@ -321,32 +327,29 @@ transform: translateX(50vw)
   justify-content: start;
 }
 
-.mod-header{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-}
+// .mod-header{
+//   margin: 0 auto;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   margin-bottom: 50px;
+// }
 
-.post-mod-card {
-  width: 40vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
+// .post-mod-card {
+//   width: 40vw;
+//   margin: 0 auto;
+//   display: block;
+//   justify-content: center;
+  
+// }
 
-.delete-btn,  .post-id{
-  margin: 10px 20px;
-}
+// .delete-btn,  .post-id{
+//   margin: 10px 20px;
+// }
 
 
-.lists{
-display: flex;
-justify-content: center;
-}
+
 
 #post-form{
     display: flex;
@@ -426,7 +429,7 @@ justify-content: center;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(224,90,90);
-  color:white;
+  color:rgb(231, 229, 229);
   font-family: 'Tiempos Headline Light';
   font-size: 20px;
 }
@@ -435,6 +438,7 @@ justify-content: center;
   height: 500px;
   z-index: 1;
 }
+//GRID CONFIGURATION
 .col{
   display: flex;
   flex-direction: column;
@@ -446,6 +450,7 @@ justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  
 }
 .col-left{
   display: flex;
@@ -453,26 +458,45 @@ justify-content: center;
   flex-basis: 100%;
   flex: 1;
 }
+//MODERATOR PAGE
+
 .mod-header{
   background-color: rgb(65, 59, 59);
-  color: white;
+  color: rgb(231, 229, 229);
   display: flex;
   height: 100vh;
   position:block;
-  font-family: 'HK Grotesk Medium'
+  font-family: 'HK Grotesk Medium';
+  text-align: center;
+  padding-top: 14vh;
+}
+.log-out-btn{
+  color:rgb(231, 229, 229);
+  font-size: 20px;
+  display:absolute;
+  padding-top: 400px;
+}
+.log-out-btn:hover{
+  color:rgb(231, 229, 229);
+ 
 }
 
 .lists{
   background-color: rgb(224,90,90);
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-h1{
-  font-family: 'Tiempos Headline Black';
-  color: rgb(224,90,90)
+.post-mod-card {
+  
+  height: 40px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 800px;
 }
-h3 {
-  font-family: 'HK Grotesk Medium'
-}
+
 .delete-btn img{
   width: 15px;
 }
@@ -480,19 +504,12 @@ h3 {
   border: none;
   background-color: rgb(224,90,90);
 }
-.log-out-btn{
-  color:white;
-  font-size: 20px;
-  display:absolute;
-  padding-top: 400px;
-}
-.log-out-btn:hover{
-  color:white;
- 
-}
+
+
+//LOGIN
 .login{
   background-color: rgb(65, 59, 59);
-  color:white;
+  color:rgb(231, 229, 229);
   font-family: 'HK Grotesk Medium';
   width: 100vw;
   height: 100vh;
@@ -515,17 +532,17 @@ h3 {
   font-weight: 500;
   border-bottom: 2px solid #C8CCD4;
   background: none;
-  border-radius: 0
+  border-radius: 0;
+  color:rgb(231, 229, 229);
 }
 .login-btn img{
-
   width: 100px;
 }
 .login-btn {
   border: none;
   background-color: rgb(65, 59, 59);
   font-family: 'HK Grotesk Medium';
-  color: white;
+  color: rgb(231, 229, 229);
   font-size: 30px;
 }
 
