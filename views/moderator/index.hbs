@@ -9,19 +9,25 @@
   
 </header>
 <div class="lists col">
-  <div >
+  
     {{#each post}}
     <div class="post-mod-card row">
-      <p class="post-text">
+      <div class="comment-text col">
+      <p>
         {{text}}
       </p>
+      </div>
+      <div class="comment-id col">
       <p class="post-id">{{id}}</p>
+      </div>
+      <div class="comment-delete col">
       <form action='private/{{this.id}}/delete' method='POST'>
         <button class="delete-btn"><img src="/images/delete-button.png" /></button>
       </form>
+      </div>
     </div>
     {{/each }}
-  </div>
+  
   
 </div>
 </div>

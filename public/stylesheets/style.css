@@ -14,6 +14,13 @@ body {
   font-family: 'Tiempos Headline Light';
   overflow-x: hidden; }
 
+h1 {
+  font-family: 'Tiempos Headline Black';
+  color: #e05a5a; }
+
+h3 {
+  font-family: 'HK Grotesk Medium'; }
+
 .intro-bg {
   background-color: #c3abd3;
   color: #e05a5a;
@@ -136,10 +143,6 @@ body {
   text-decoration: none;
   margin: 0 10px; }
 
-.svg-icon {
-  width: 50px;
-  margin: 0 20px; }
-
 #map {
   margin: 0;
   padding: 0;
@@ -151,7 +154,7 @@ body {
   z-index: 200; }
 
 .about-img {
-  width: 50px;
+  width: 75px;
   padding: 10px;
   margin: 10px 0 0 20px;
   cursor: pointer; }
@@ -165,11 +168,12 @@ body {
     box-shadow: 0 0 0 0 var(--hover); } }
 
 .stats-img {
-  width: 50px;
-  padding: 10px; }
+  width: 75px;
+  padding: 8px;
+  cursor: pointer; }
 
 .post-img {
-  width: 100px;
+  width: 150px;
   padding-right: 60px;
   margin-top: 20px; }
 
@@ -203,7 +207,7 @@ section {
   font-size: 3em; }
 
 section h1 {
-  color: white; }
+  color: #e7e5e5; }
 
 section p {
   padding: 20px;
@@ -262,28 +266,6 @@ section span {
   margin: 20px 0;
   display: flex;
   justify-content: start; }
-
-.mod-header {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px; }
-
-.post-mod-card {
-  width: 40vw;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-content: center; }
-
-.delete-btn, .post-id {
-  margin: 10px 20px; }
-
-.lists {
-  display: flex;
-  justify-content: center; }
 
 #post-form {
   display: flex;
@@ -347,7 +329,7 @@ section span {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   background-color: #e05a5a;
-  color: white;
+  color: #e7e5e5;
   font-family: 'Tiempos Headline Light';
   font-size: 20px; }
 
@@ -376,22 +358,36 @@ section span {
 
 .mod-header {
   background-color: #413b3b;
-  color: white;
+  color: #e7e5e5;
   display: flex;
   height: 100vh;
   position: block;
-  font-family: 'HK Grotesk Medium'; }
+  font-family: 'HK Grotesk Medium';
+  text-align: center;
+  padding-top: 14vh; }
+
+.log-out-btn {
+  color: #e7e5e5;
+  font-size: 20px;
+  display: absolute;
+  padding-top: 400px; }
+
+.log-out-btn:hover {
+  color: #e7e5e5; }
 
 .lists {
   background-color: #e05a5a;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
 
-h1 {
-  font-family: 'Tiempos Headline Black';
-  color: #e05a5a; }
-
-h3 {
-  font-family: 'HK Grotesk Medium'; }
+.post-mod-card {
+  height: 40px;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  width: 800px; }
 
 .delete-btn img {
   width: 15px; }
@@ -400,18 +396,9 @@ h3 {
   border: none;
   background-color: #e05a5a; }
 
-.log-out-btn {
-  color: white;
-  font-size: 20px;
-  display: absolute;
-  padding-top: 400px; }
-
-.log-out-btn:hover {
-  color: white; }
-
 .login {
   background-color: #413b3b;
-  color: white;
+  color: #e7e5e5;
   font-family: 'HK Grotesk Medium';
   width: 100vw;
   height: 100vh;
@@ -434,7 +421,8 @@ h3 {
   font-weight: 500;
   border-bottom: 2px solid #C8CCD4;
   background: none;
-  border-radius: 0; }
+  border-radius: 0;
+  color: #e7e5e5; }
 
 .login-btn img {
   width: 100px; }
@@ -443,7 +431,7 @@ h3 {
   border: none;
   background-color: #413b3b;
   font-family: 'HK Grotesk Medium';
-  color: white;
+  color: #e7e5e5;
   font-size: 30px; }
 
 .close-chart-cont-btn {
