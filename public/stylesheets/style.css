@@ -449,7 +449,6 @@ h3 {
   color: white;
   font-size: 30px; }
 
-<<<<<<< HEAD
 #chart-icon {
   margin: 10px 0 0 20px; }
 
@@ -490,7 +489,7 @@ h3 {
     opacity: 100; }
   100% {
     opacity: 0; } }
-=======
+
 #canvas {
   width: 500px;
   height: 700px; }
@@ -514,6 +513,5 @@ h3 {
 
 #myChartLegend ul li.hidden {
   color: #413b3b; }
->>>>>>> 6354b2ab2681508b75d80fd0394832abc9f17ee7
 
 /*# sourceMappingURL=style.css.map */
