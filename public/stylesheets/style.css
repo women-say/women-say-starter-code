@@ -437,4 +437,24 @@ h3 {
   width: 500px;
   height: 700px; }
 
+#myChart {
+  background-color: #c77373;
+  opacity: 5%;
+  height: 100vh; }
+
+#myChartLegend {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #c77373;
+  font-family: 'HK Grotesk Medium';
+  color: #e7e5e5; }
+
+#myChartLegend ul li {
+  justify-content: left;
+  padding-left: 40px;
+  cursor: cell; }
+
+#myChartLegend ul li.hidden {
+  color: #413b3b; }
+
 /*# sourceMappingURL=style.css.map */
