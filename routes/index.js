@@ -25,7 +25,6 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
-
 router.get('/chart', (req, res, next) => {
   res.render('chart');
 });

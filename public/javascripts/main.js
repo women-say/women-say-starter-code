@@ -103,32 +103,7 @@ const postPosts = (posts, map) => {
   })
 }
 
+///CHART JS
 
-///acaba promesa
 
-  /////////////////charrrrrrrrttttttttt////////////////
-  // var config = {
-  //   type: 'line',
-  //   data: {
-  //     labels: labels,
-  //     datasets: [{
-  //       label: label,
-  //       fill: false,
-  //       backgroundColor: window.chartColors.red,
-  //       borderColor: window.chartColors.red,
-  //       data: data
-  //     }]
-  //   },
-  //   options: {
-  //     responsive: true,
-  //     title: {
-  //       display: true,
-  //       text: 'Chart'
-  //     },
-  //   }
-  // };
 
-  // window.onload = function() {
-  //   var ctx = document.getElementById('canvas').getContext('2d');
-  //   window.myLine = new Chart(ctx, config);
-  // };

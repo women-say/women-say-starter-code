@@ -449,6 +449,7 @@ h3 {
   color: white;
   font-size: 30px; }
 
+<<<<<<< HEAD
 #chart-icon {
   margin: 10px 0 0 20px; }
 
@@ -489,5 +490,30 @@ h3 {
     opacity: 100; }
   100% {
     opacity: 0; } }
+=======
+#canvas {
+  width: 500px;
+  height: 700px; }
+
+#myChart {
+  background-color: #c77373;
+  opacity: 5%;
+  height: 100vh; }
+
+#myChartLegend {
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #c77373;
+  font-family: 'HK Grotesk Medium';
+  color: #e7e5e5; }
+
+#myChartLegend ul li {
+  justify-content: left;
+  padding-left: 40px;
+  cursor: cell; }
+
+#myChartLegend ul li.hidden {
+  color: #413b3b; }
+>>>>>>> 6354b2ab2681508b75d80fd0394832abc9f17ee7
 
 /*# sourceMappingURL=style.css.map */
