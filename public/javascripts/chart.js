@@ -43,8 +43,8 @@ const paintChart = () => {
         })
         console.log(datasets.data)
         if (datasets.data[7] > 1) datasets.borderColor = 'rgb(28, 114, 110)'
-        if (datasets.data[7] <= 1 && datasets.data[6] >= 0.9) datasets.borderColor = 'rgb(231, 229, 229)'
-        if (datasets.data[7] <= 0.9) datasets.borderColor = 'rgb(65, 59, 59)'
+        if (datasets.data[7] <= 1 && datasets.data[6] >= 0.87) datasets.borderColor = 'rgb(231, 229, 229)'
+        if (datasets.data[7] <= 0.87) datasets.borderColor = 'rgb(65, 59, 59)'
 
         return datasets
       })

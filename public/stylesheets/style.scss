@@ -30,6 +30,8 @@ body {
 h3 {
   font-family: 'HK Grotesk Medium'
 }
+
+
 /////// INTRO BACKGROUND WOMEN SAY
 
 .intro-bg{
@@ -186,6 +188,11 @@ h3 {
 }
 
 // NAV BAR
+.disappear-opacity{
+  opacity: 0;
+}
+
+
 .about-img{
   width: 75px;
   padding: 10px;
@@ -567,10 +574,12 @@ transform: translateX(50vw)
 ////// CHARTS CSS
 // CHART 1
 .close-chart-cont-btn{
+
   position: absolute;
   
 
- .leftright{
+
+ .leftright1{
   height: 4px;
   width: 35px;
   position: absolute;
@@ -578,10 +587,9 @@ transform: translateX(50vw)
   background-color: $goodwhite;
   border-radius: 2px;
   transform: rotate(45deg);
-  transition: all .3s ease-in;
-}
+  }
 
-.rightleft{
+.rightleft1{
   height: 4px;
   width: 35px;
   position: absolute;
@@ -589,18 +597,9 @@ transform: translateX(50vw)
   background-color: $goodwhite;
   border-radius: 2px;
   transform: rotate(-45deg);
-  transition: all .3s ease-in;
 }
 }
 
-.close-chart-cont-btn:hover .leftright{
-  transform: rotate(-45deg);
-  background-color: $goodwhite;
-}
-.close-chart-cont-btn:hover .rightleft{
-  transform: rotate(45deg);
-  background-color: $goodwhite;
-}
 
 #chart-icon {
   margin: 10px 0 0 20px;

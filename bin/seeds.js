@@ -1,3 +1,4 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 const Post = require("../models/Post")
 const dbName = 'women-say-starter-code'

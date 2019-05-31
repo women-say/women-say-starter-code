@@ -152,6 +152,9 @@ h3 {
   display: block;
   z-index: 200; }
 
+.disappear-opacity {
+  opacity: 0; }
+
 .about-img {
   width: 75px;
   padding: 10px;
@@ -474,32 +477,22 @@ section span {
 
 .close-chart-cont-btn {
   position: absolute; }
-  .close-chart-cont-btn .leftright {
+  .close-chart-cont-btn .leftright1 {
     height: 4px;
     width: 35px;
     position: absolute;
     margin-top: 24px;
     background-color: #E7E5E5;
     border-radius: 2px;
-    transform: rotate(45deg);
-    transition: all .3s ease-in; }
-  .close-chart-cont-btn .rightleft {
+    transform: rotate(45deg); }
+  .close-chart-cont-btn .rightleft1 {
     height: 4px;
     width: 35px;
     position: absolute;
     margin-top: 24px;
     background-color: #E7E5E5;
     border-radius: 2px;
-    transform: rotate(-45deg);
-    transition: all .3s ease-in; }
-
-.close-chart-cont-btn:hover .leftright {
-  transform: rotate(-45deg);
-  background-color: #E7E5E5; }
-
-.close-chart-cont-btn:hover .rightleft {
-  transform: rotate(45deg);
-  background-color: #E7E5E5; }
+    transform: rotate(-45deg); }
 
 #chart-icon {
   margin: 10px 0 0 20px; }
