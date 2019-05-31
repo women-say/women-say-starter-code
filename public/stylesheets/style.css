@@ -234,6 +234,9 @@ section span {
   width: 50px;
   display: block; }
 
+#close-btn-post {
+  margin-left: 13px; }
+
 .source {
   font-size: 20px; }
 
@@ -478,18 +481,18 @@ section span {
 .close-chart-cont-btn {
   position: absolute; }
   .close-chart-cont-btn .leftright1 {
-    height: 4px;
-    width: 35px;
+    height: 3.5px;
+    width: 20px;
     position: absolute;
-    margin-top: 24px;
+    margin-top: 5px;
     background-color: #E7E5E5;
     border-radius: 2px;
     transform: rotate(45deg); }
   .close-chart-cont-btn .rightleft1 {
-    height: 4px;
-    width: 35px;
+    height: 3.5px;
+    width: 20px;
     position: absolute;
-    margin-top: 24px;
+    margin-top: 5px;
     background-color: #E7E5E5;
     border-radius: 2px;
     transform: rotate(-45deg); }
@@ -503,7 +506,7 @@ section span {
   top: 0;
   left: 0;
   z-index: 2000;
-  width: 87vw;
+  width: 94vw;
   height: 94vh;
   animation: appearChart;
   animation-duration: .7s;
@@ -527,12 +530,12 @@ section span {
 
 #canvas {
   width: 500px;
-  height: 700px; }
+  height: 94vh; }
 
 #myChart {
   background-color: rgba(65, 59, 59, 0.4);
   opacity: 5%;
-  height: 94vh; }
+  height: 94vh !important; }
 
 #myChartLegend {
   height: 94vh !important;

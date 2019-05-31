@@ -103,7 +103,4 @@ const postPosts = (posts, map) => {
   })
 }
 
-///CHART JS
-
-
 
