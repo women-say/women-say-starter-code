@@ -8,6 +8,7 @@ const closePostBtn = document.querySelector("#close-btn-post")
 const closeAboutBtn = document.querySelector("#close-btn-about")
 const modalBg = document.querySelector(".modal-bg")
 const submitButton = document.querySelector("#submit")
+const navbar = document.querySelector(".sidebar")
 
 let closeChartBtn
 
@@ -19,16 +20,29 @@ const closePost = () => {
 
 }
 
+const disappearNav = () => {
+  navbar.classList.add("disappear-opacity")
+}
+
+const appearNav = () => {
+  navbar.classList.remove("disappear-opacity")
+}
+
 const printChart1 = () => {
+  if (postWindow.classList.contains("move-in-right")) closePost()
+
+
   const chartContainer = document.createElement("div");
   chartContainer.classList.add("chart-container")
   document.body.appendChild(chartContainer)
-  chartContainer.innerHTML = '<div class="close-chart-cont-btn"><div class="close-container close-btn" id="close-btn-post"><div class="leftright"></div><div class="rightleft"></div></div></div><div class="chartContainer row" ><div class="col-left" id="myChartLegend"></div><div class="col"><canvas id="myChart" width="400" height="350"></canvas></div></div>'
+  chartContainer.innerHTML = '<div class="close-chart-cont-btn"><div class="close-container close-btn" id="close-btn-post"><div class="leftright1"></div><div class="rightleft1"></div></div></div><div class="chartContainer row" ><div class="col-left" id="myChartLegend"></div><div class="col"><canvas id="myChart" width="400" height="350"></canvas></div></div>'
 
   closeChartBtn = document.querySelector(".close-chart-cont-btn")
   closeChartBtn.onclick = () => {
     closeChart1()
   };
+
+  disappearNav()
 }
 
 const closeChart1 = () => {
@@ -39,6 +53,7 @@ const closeChart1 = () => {
     chartContainer.parentNode.removeChild(chartContainer);
   }, 400);
 
+  appearNav()
 }
 
 window.onload = function () {
@@ -53,8 +68,8 @@ document.addEventListener('DOMContentLoaded', () => {
   postButton.onclick = () => {
     postWindow.classList.remove("out-of-the-way-right")
     postWindow.classList.add("move-in-right")
-    modalBg.classList.add("appear")
-    // modalBg.style.display = "block"
+    // modalBg.classList.add("appear")
+
     if (aboutWindow.classList.contains("move-in-left")) {
       aboutWindow.classList.add("out-of-the-way")
       aboutWindow.classList.remove("move-in-left")
