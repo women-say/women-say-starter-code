@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Post = require("../models/Post")
 const dbName = 'women-say-starter-code'
+require('dotenv').config();
 mongoose.connect(process.env.DB);
 
 const posts = [

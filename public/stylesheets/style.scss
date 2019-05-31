@@ -4,6 +4,7 @@ $verdito: rgb(28, 114, 110);
 $softorange: #fff;
 $violeta: rgb(195, 171, 211);
 $mediumblu: #1E272D;
+$goodwhite: #E7E5E5;
 
 * {
   margin: 0;
@@ -24,10 +25,8 @@ body {
   font-family: 'Tiempos Headline Light';
   overflow-x: hidden;
 }
-h1{
-  font-family: 'Tiempos Headline Black';
-  color: rgb(224,90,90)
-}
+
+
 h3 {
   font-family: 'HK Grotesk Medium'
 }
@@ -56,6 +55,9 @@ h3 {
   font-size: 5em;
   animation: appear;
   animation-duration: 3s;
+  font-family: 'Tiempos Headline Black';
+  color: rgb(224,90,90)
+  
 }
 .intro-bg span{
   animation: appear-point;
@@ -102,6 +104,7 @@ h3 {
   height: 50px;
   margin-top: 100px;
   cursor: pointer;
+  display:inline-block;
 }
 
 .leftright{
@@ -239,6 +242,11 @@ nav{
 transform: translateX(-5vw)
 }
 
+.about-title{
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
 
 section{
   position:absolute;
@@ -249,15 +257,23 @@ section{
   background-color: rgb(224,90,90);
   font-size: 3em;
 }
-section h1{
+section h2{
   color:rgb(231, 229, 229);
 }
 section p{
-  padding: 20px;
-  line-height: 1.6;
+  padding: 10px;
+  line-height: 1.3;
+  font-size:35px;
+  
+}
+
+.about-text p{
+  margin:0px 50px;
+  padding:10px;
 }
 section span{
-  background-color: rgb(28,114,110)
+  background-color: rgb(28,114,110);
+  
 }
 .close-btn{
   margin: 20px;
@@ -266,9 +282,15 @@ section span{
   width: 50px;
   display:block;
 }
-
-
-
+.source{
+  font-size: 20px;
+}
+.inspiration{
+  font-size: 15px;
+  background-color: none;
+  font-family: 'HK Grotesk Medium';
+ 
+}
 
 //POST SECTION
 #post{
@@ -326,28 +348,6 @@ transform: translateX(50vw)
   justify-content: start;
 }
 
-// .mod-header{
-//   margin: 0 auto;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   margin-bottom: 50px;
-// }
-
-// .post-mod-card {
-//   width: 40vw;
-//   margin: 0 auto;
-//   display: block;
-//   justify-content: center;
-  
-// }
-
-// .delete-btn,  .post-id{
-//   margin: 10px 20px;
-// }
-
-
 
 
 #post-form{
@@ -355,7 +355,7 @@ transform: translateX(50vw)
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 }
 .post-text{
   height: 150px;
@@ -377,8 +377,6 @@ transform: translateX(50vw)
       transform: translateX(-12px)
     }
 }
-
-
 
 .search-submit-container{
   margin-top: 40px;
@@ -426,7 +424,6 @@ transform: translateX(50vw)
   }
 .mapboxgl-popup-content {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
   background-color: rgb(224,90,90);
   color:rgb(231, 229, 229);
   font-family: 'Tiempos Headline Light';
@@ -451,6 +448,17 @@ transform: translateX(50vw)
   width: 100%;
   
 }
+.inside-col{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 2;
+  width:35%;
+  padding: 30px;
+  text-align:left;
+  justify-content:center;
+}
+
 .col-left{
   display: flex;
   flex-direction: column;
@@ -469,6 +477,11 @@ transform: translateX(50vw)
   text-align: center;
   padding-top: 14vh;
 }
+.moderator-title{
+  color:rgb(224,90,90);
+  font-size: 40px;
+  font-family: 'Tiempos Headline Black';
+}
 .log-out-btn{
   color:rgb(231, 229, 229);
   font-size: 20px;
@@ -479,29 +492,35 @@ transform: translateX(50vw)
   color:rgb(231, 229, 229);
  
 }
+.list form{
+  display:flex;
+  align-content:center;
+  justify-content:center;
+}
 
 .lists{
   background-color: rgb(224,90,90);
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-content: center;
 }
 .post-mod-card {
-  
-  height: 40px;
-  display: flex;
+  height: 80px;
   justify-self: center;
   align-self: center;
   width: 800px;
 }
-
+.comment-delete{
+  align-content: center;
+  padding: 30px;
+}
 .delete-btn img{
   width: 15px;
 }
 .delete-btn{
   border: none;
   background-color: rgb(224,90,90);
+  padding: 20px;
 }
 
 
@@ -548,16 +567,15 @@ transform: translateX(50vw)
 ////// CHARTS CSS
 // CHART 1
 .close-chart-cont-btn{
-  position: fixed;
-  top: -1.5vh;
-  right: .8vw;
+  position: absolute;
+  
 
  .leftright{
   height: 4px;
   width: 35px;
   position: absolute;
   margin-top: 24px;
-  background-color: black;
+  background-color: $goodwhite;
   border-radius: 2px;
   transform: rotate(45deg);
   transition: all .3s ease-in;
@@ -568,7 +586,7 @@ transform: translateX(50vw)
   width: 35px;
   position: absolute;
   margin-top: 24px;
-  background-color: black;
+  background-color: $goodwhite;
   border-radius: 2px;
   transform: rotate(-45deg);
   transition: all .3s ease-in;
@@ -577,11 +595,11 @@ transform: translateX(50vw)
 
 .close-chart-cont-btn:hover .leftright{
   transform: rotate(-45deg);
-  background-color: black;
+  background-color: $goodwhite;
 }
 .close-chart-cont-btn:hover .rightleft{
   transform: rotate(45deg);
-  background-color: black;
+  background-color: $goodwhite;
 }
 
 #chart-icon {
@@ -590,27 +608,27 @@ transform: translateX(50vw)
 
 .chart-container{
  margin: 3vh 3vw 3vh 3vw;
- background-color:rgba(65, 59, 59, 0.5);
+//  background-color:rgba(65, 59, 59, 0.5);
  position: fixed;
  top: 0;
  left: 0;
  z-index: 2000;
- width: 94vw;
+ width: 87vw;
  height: 94vh;
  animation: appearChart;
  animation-duration: .7s;
  border-radius: 4px;
 }
 
-.closeChartButton{
-  position: fixed;
-  top: 1.5vh;
-  right: 1vw;
-  width: 35px;
-  height: 35px;
-  border-radius: 100px;
-  background-color: red;
-}
+// .closeChartButton{
+//   position: fixed;
+//   top: 1.5vh;
+//   right: 1vw;
+//   width: 35px;
+//   height: 35px;
+//   border-radius: 100px;
+//   background-color: red;
+// }
 
 @keyframes appearChart {
   0%   { opacity: 0; }
@@ -662,5 +680,6 @@ transform: translateX(50vw)
 
 .about-title, .post-title{
   font-family: 'HK Grotesk Bold'
+  
 }
 

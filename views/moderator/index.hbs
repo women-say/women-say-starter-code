@@ -1,6 +1,6 @@
 <div class="container row">
   <header class="mod-header col-left">
-    <h1>Women say.</h1>
+    <h2 class="moderator-title">Women say.</h2>
     <h2>Moderator Page</h2>
 
     <h3>Hi {{user.username}}</h3>
@@ -12,13 +12,13 @@
 
     {{#each post}}
     <div class="post-mod-card row">
-      <div class="comment-text">
+      <div class="comment-id inside-col">
+      <p class="post-id">{{id}}</p>
+      </div>
+      <div class="comment-text inside-col">
       <p>
         {{text}}
       </p>
-      </div>
-      <div class="comment-id">
-      <p class="post-id">{{id}}</p>
       </div>
       <div class="comment-delete">
       <form action='private/{{this.id}}/delete' method='POST'>
