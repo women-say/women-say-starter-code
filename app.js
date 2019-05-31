@@ -14,8 +14,8 @@ const flash = require("connect-flash");
 
 
 mongoose
-  // .connect(process.env.DB, { useNewUrlParser: true })
-  .connect(`mongodb://localhost:27017/women-say-starter-code`, { useNewUrlParser: true })
+// .connect(`mongodb://localhost:27017/women-say-starter-code`, { useNewUrlParser: true })
+.connect(process.env.DB, { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -61,7 +61,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
 
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = 'Women Say.';
 app.locals.apiKEY = process.env.KEY
 
 // Enable authentication using session + passport
