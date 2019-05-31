@@ -14,8 +14,8 @@ const flash = require("connect-flash");
 
 
 mongoose
-// .connect(`mongodb://localhost:27017/women-say-starter-code`, { useNewUrlParser: true })
-.connect(process.env.DB, { useNewUrlParser: true })
+// .connect(process.env.DB, { useNewUrlParser: true })
+.connect(`mongodb://localhost:27017/women-say-starter-code`, { useNewUrlParser: true })
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
